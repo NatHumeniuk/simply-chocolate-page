@@ -24,6 +24,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -101,7 +102,7 @@
               <button class="hero-btn" type="button">Buy now</button>
               <a class="hero-link link" href="#made">How it’s made</a>
               <a class="hero-down link" href="#footer">scroll down </a>
-              <button class="scroll-btn-wrap" type="button">
+              <button class="scroll-btn-wrap" type="button" href="#footer">
                 <svg class="scroll-btn" width="22" height="22">
                   <use href="./images/symbol-defs.svg#icon-hero-left"></use>
                 </svg>
@@ -676,7 +677,9 @@
               </p>
             </li>
           </ul>
-          <button class="loved-btn" type="button">Leave a review</button>
+          <button class="loved-btn" type="button" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -749,22 +752,121 @@
             </address>
           </div>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-nav-list list">
-            <li class="footer-nav-item">
-              <a class="footer-nav-link link" href="#made">How it’s made?</a>
-            </li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link link" href="#loved"
-                >Chocolate is loved</a
+        <div class="footer-bottom">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link link" href="#made">How it’s made?</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link link" href="#loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link link" href="./index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-subscribe">
+            <div class="footer-input-wrap">
+              <input
+                type="email"
+                name="footer-user-email"
+                class="footer-input"
+                id="footer-user-email"
+                placeholder=" "
+              />
+              <label for="footer-user-email" class="footer-label"
+                >Enter your email</label
               >
-            </li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link link" href="./index.html">Home</a>
-            </li>
-          </ul>
-        </nav>
+            </div>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+          Leave a review about <span>our chocolate</span>
+        </p>
+        <form class="modal-form">
+          <div class="input-field">
+            <label for="user-name" class="input-lable">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="user-email" class="input-lable">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-envelop"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="user-phone" class="input-lable">Phone number</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-phone"
+                id="user-phone"
+                class="modal-input"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="user-text" class="input-lable">Comment</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-text-area"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="input-field">
+            <input
+              type="checkbox"
+              name="user-terms"
+              id="user-terms"
+              class="modal-check-policy"
+            />
+            <label for="user-terms" class="user-policy-label"
+              >I accept the terms and conditions of the
+              <a href="" class="policy-link link">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="modal-submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

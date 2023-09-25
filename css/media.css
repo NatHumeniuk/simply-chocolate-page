@@ -1,0 +1,228 @@
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .container {
+    max-width: 734px;
+  }
+  .adv-list {
+    row-gap: 44px;
+    column-gap: 88px;
+  }
+  .adv-item {
+    width: calc((100% - 88px) / 2);
+  }
+  .taste {
+    padding-top: 100px;
+  }
+  .taste-title {
+    max-width: 411px;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    margin: 0 auto 50px;
+  }
+  .taste-list {
+    gap: 32px;
+  }
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .made {
+    padding-top: 100px;
+  }
+  .made > .container {
+    max-width: 644px;
+  }
+  .made-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+  }
+  .made-img {
+    width: 100%;
+  }
+  .made-content {
+    padding: 32px;
+    max-width: 614px;
+  }
+  .made-text {
+    margin-bottom: 28px;
+  }
+  .made-item-text {
+    max-width: 464px;
+  }
+  .products {
+    padding-top: 100px;
+  }
+  .products-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+  }
+  .products-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .products-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .topsell {
+    padding-top: 100px;
+  }
+  .topsell-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .topsell-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .topsell-item {
+    width: calc((100% - 16px) / 2);
+  }
+  .topsell-name {
+    margin-bottom: 28px;
+    margin-top: 28px;
+  }
+  .topsell-cover-text {
+    max-width: 344px;
+  }
+  .loved {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .loved-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 91px;
+  }
+  .loved-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 49px;
+  }
+  .loved-item {
+    padding: 56px 16px 42px;
+    width: calc((100% - 16px) / 2);
+    margin-bottom: 0;
+  }
+  .loved-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1166px) {
+  .container {
+    max-width: 1166px;
+  }
+  .adv-list {
+    row-gap: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .adv-item {
+    width: calc((100% - 88px * 2) / 3);
+  }
+  .adv-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 124px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .taste {
+    padding-top: 120px;
+  }
+  .taste-title {
+    min-width: 412px;
+  }
+  .taste-list {
+    row-gap: 24px;
+    column-gap: 32px;
+  }
+  .taste-item {
+    width: calc((100% - 32px * 3) / 4);
+    padding-top: 28px;
+  }
+  .taste-img {
+    margin-bottom: 36px;
+  }
+  .cover-taste {
+    padding: 20px 15px;
+  }
+  .made > .container {
+    max-width: 1166px;
+  }
+  .made {
+    padding-top: 120px;
+  }
+  .made-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .made-img {
+    max-width: 600px;
+  }
+  .made-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .made-img-wrap {
+    margin-right: 20px;
+  }
+  .made-content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .made-item-text {
+    max-width: 436px;
+  }
+  .products {
+    padding-top: 120px;
+  }
+  .products-list {
+    row-gap: 24px;
+    column-gap: 18px;
+  }
+  .products-item {
+    width: calc((100% - 18px * 3) / 4);
+    padding: 32px 20px;
+  }
+  .topsell {
+    padding-top: 120px;
+  }
+  .topsell-item {
+    width: calc((100% - 16px * 2) / 3);
+  }
+  .topsell-cover-text {
+    max-width: 368px;
+  }
+  .loved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .loved-list {
+    flex-wrap: nowrap;
+    column-gap: 28px;
+    row-gap: 0;
+  }
+  .loved-item {
+    padding: 56px 24px 24px;
+    width: calc((100% - 28px * 2) / 3);
+  }
+}
